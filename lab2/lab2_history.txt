@@ -1,0 +1,45 @@
+  447  cd
+  448  mkdir test
+  449  cdtest
+  450  cd test
+  451  touch file
+  452  chmod 000 file
+  453  echo "тест" >file
+  454  cat file
+  455  chmod 200 file
+  456  echo "test" >file
+  457  cat file
+  458  chmod 240 file
+  459  cat file
+  460  chmod 640 file
+  461  cat file
+  462  mkdir dir
+  463  cd dit
+  464  cd dir
+  465  echo "file 2" >new_file
+  466  ll
+  467  chmod ugo-x dir
+  468  cd ..
+  469  chmod ugo-x dir
+  470  cat dir/new_file
+  471  rm dir/new_file
+  472  chown root file
+  473  chgrp root file
+  474  umask 177
+  475  touch file1
+  476  ll file1
+  477  umask 111
+  478  touch file2
+  479  ll file2
+  480  cat file
+  481  cd ..
+  482  cd Documents/BOSS/labs
+  483  mkdir lab2
+  484  cd lab2
+  485  rm lab2
+  486  rmdir lab2
+  487  umask
+  488  umask 022
+  489  mkdir lab2
+  490  cd lab2
+  491  cd 
