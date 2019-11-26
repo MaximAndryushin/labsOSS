@@ -7,3 +7,4 @@ do
 		echo "process $comm's euid differs from ruid"
 	fi
 done
+rm temp.out
